@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Foodsta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        /* Reset default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #F8BC25; /* Background color */
+            color: #222; /* Text color */
+        }
+    
+        /* Navbar Styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #F8BC25;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+    
+        .logo img {
+            width: 120px;
+            height: auto;
+        }
+    
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+    
+        .nav-links li {
+            margin-left: 20px;
+        }
+    
+        .nav-links a {
+            text-decoration: none;
+            color: #DA291C;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+    
+        .nav-links a:hover {
+            color: #FFFFFF;
+        }
+    
+        /* Menu Section */
+        .menu-section {
+            padding: 50px 20px;
+            background-color: #F7F7F7;
+            text-align: center;
+        }
+    
+        .menu-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #DA291C;
+            font-family: 'Pacifico', cursive;
+        }
+    
+        .menu-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+    
+        .menu-item {
+            width: 300px;
+            background-color: white;
+            border: 2px solid #F8BC25;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+    
+        .menu-item h3 {
+            background-color: #DA291C;
+            color: white;
+            padding: 15px;
+            font-size: 1.5em;
+            font-family: 'Pacifico', cursive;
+        }
+    
+        .menu-item p {
+            padding: 15px;
+            color: #333;
+        }
+    
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+    
+        .buy-now {
+            display: inline-block;
+            background-color: #DA291C;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 15px;
+            transition: background-color 0.3s ease;
+        }
+    
+        .buy-now:hover {
+            background-color: #F8BC25;
+            color: #DA291C;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" aria-label="Main Navigation">
+        <div class="logo">
+            <img src="logo.png" alt="Foodsta Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="Sign-in.html">Sign in</a></li>
+            <li><a href="deals.html">Deals</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="menu-section">
+        <h2>Simple Burgers</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <h3>Classic Veggie Burger</h3>
+                <p>A delicious burger with a crispy veggie patty, fresh veggies, and signature sauce.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>VEGGIE Fresh Burger</h3>
+                <p>A healthy option with fresh garden vegetables and a homemade veggie patty.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Spicy Burger</h3>
+                <p>For those who love heat, a spicy bean patty with jalapeños and special sauce.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <h2>Grand Burgers</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <h3>Double Veggie Deluxe</h3>
+                <p>Two veggie patties with all the trimmings for a satisfying meal.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Mushroom Swiss Veggie Burger</h3>
+                <p>A veggie patty topped with Swiss cheese and sautéed mushrooms.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>BBQ Plant-Based Burger</h3>
+                <p>A plant-based patty with smoky BBQ sauce, lettuce, and tomato.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Spicy Jalapeño Veggie Burger</h3>
+                <p>A spicy delight with jalapeños, lettuce, and a crispy veggie patty.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pizzas Section -->
+    <section class="menu-section">
+        <h2>Pizzas</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <h3>Margherita</h3>
+                <p>Fresh tomatoes, basil, and mozzarella.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Veggie Supreme</h3>
+                <p>Peppers, onions, olives, and mushrooms.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Mushroom Delight</h3>
+                <p>Thin-crust pizza with sautéed mushrooms.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Paneer Tikka</h3>
+                <p>Paneer cubes with tikka spices on a cheese base.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Cheese Burst</h3>
+                <p>Extra cheesy pizza with a gooey cheese center.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Mexican Fiesta</h3>
+                <p>Spicy jalapeños, corn, and black beans on a cheesy base.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Pepper Pizza</h3>
+                <p>A pepper-loaded pizza with multiple varieties of peppers.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Spinach Alfredo</h3>
+                <p>Spinach and creamy Alfredo sauce on a thin crust.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>BBQ Tofu</h3>
+                <p>BBQ sauce, tofu, and onions on a smoky pizza base.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Hawaiian Veggie</h3>
+                <p>Sweet pineapple and crunchy peppers on a classic crust.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ice Creams Section -->
+    <section class="menu-section">
+        <h2>Ice Creams</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <h3>Vanilla Bean</h3>
+                <p>Classic vanilla flavor made with real vanilla beans.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Chocolate Fudge</h3>
+                <p>A creamy chocolate delight with fudge pieces.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Strawberry Swirl</h3>
+                <p>Strawberry ice cream with real strawberry swirls.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Mint Chocolate Chip</h3>
+                <p>Cool mint ice cream with dark chocolate chips.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Caramel Crunch</h3>
+                <p>Caramel ice cream with crunchy caramel bits.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cold Drinks Section -->
+    <section class="menu-section">
+        <h2>Cold Drinks</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <h3>Fresh Lemonade</h3>
+                <p>Freshly squeezed lemon with a touch of sweetness.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Fruit Punch</h3>
+                <p>A blend of tropical fruits for a refreshing punch.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Iced Tea</h3>
+                <p>Chilled tea served with lemon and mint.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Mango Smoothie</h3>
+                <p>Blended mango with yogurt for a thick, tropical drink.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Cola</h3>
+                <p>A classic carbonated beverage for refreshment.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Orange Fizz</h3>
+                <p>Fresh orange juice with a fizzy twist.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Berry Smoothie</h3>
+                <p>A smoothie made with mixed berries and yogurt.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dips Section -->
+    <section class="menu-section">
+        <h2>Dips</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <h3>Spicy Mayo Dip</h3>
+                <p>A tangy and spicy mayonnaise-based dip perfect for fries.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Garlic Aioli</h3>
+                <p>A creamy garlic sauce that adds a burst of flavor to any dish.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Barbecue Sauce</h3>
+                <p>A smoky and tangy BBQ sauce for dipping and drizzling.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Choco Lava Cakes Section -->
+    <section class="menu-section">
+        <h2>Choco Lava Cakes</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <h3>Classic Choco Lava</h3>
+                <p>A rich, molten chocolate cake with a gooey center.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Double Chocolate Lava</h3>
+                <p>Double the chocolate with an extra gooey center for the chocoholic.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>White Chocolate Lava</h3>
+                <p>A molten cake with a white chocolate lava center.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Salted Caramel Lava</h3>
+                <p>A salted caramel-filled molten cake with chocolate outer.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Mocha Lava Cake</h3>
+                <p>A blend of rich chocolate and coffee in a molten cake.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Milkshakes Section -->
+    <section class="menu-section">
+        <h2>Milkshakes</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <h3>Vanilla Milkshake</h3>
+                <p>A creamy milkshake made with vanilla ice cream.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Chocolate Milkshake</h3>
+                <p>A rich milkshake with chocolate ice cream and syrup.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Strawberry Milkshake</h3>
+                <p>A sweet, fruity milkshake made with fresh strawberries.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Mint Milkshake</h3>
+                <p>A refreshing milkshake with mint ice cream and chocolate chips.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Caramel Milkshake</h3>
+                <p>A rich and creamy caramel-flavored milkshake.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Oreo Milkshake</h3>
+                <p>A milkshake blended with Oreo cookies and cream.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Peanut Butter Milkshake</h3>
+                <p>Rich peanut butter blended into a creamy milkshake.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Banana Milkshake</h3>
+                <p>A thick, creamy milkshake made with fresh bananas.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Espresso Milkshake</h3>
+                <p>A blend of coffee and vanilla ice cream for a kick.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Cherry Milkshake</h3>
+                <p>Sweet cherries blended into a smooth milkshake.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coffee Section -->
+    <section class="menu-section">
+        <h2>Coffee</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <h3>Latte</h3>
+                <p>A smooth espresso blended with steamed milk.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Cappuccino</h3>
+                <p>A frothy espresso with steamed milk and foam.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Espresso</h3>
+                <p>A rich shot of freshly brewed espresso.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Mocha</h3>
+                <p>A blend of coffee and chocolate for a rich mocha experience.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fries Section -->
+    <section class="menu-section">
+        <h2>Fries</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <h3>Classic Fries</h3>
+                <p>Crispy, golden fries lightly salted.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+            <div class="menu-item">
+                <h3>Cheese Fries</h3>
+                <p>Fries smothered in a rich cheese sauce.</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Foodsta. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </footer>
+</body>
+</html>

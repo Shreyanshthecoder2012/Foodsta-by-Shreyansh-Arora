@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Burger King</title>
+    <style>
+        /* Reset default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #F7F7F7;
+            color: #333;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #F8BC25;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo img {
+            width: 120px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #DA291C;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #FFFFFF;
+        }
+
+        .burger {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 21px;
+        }
+
+        .burger div {
+            width: 25px;
+            height: 3px;
+            background-color: #DA291C;
+            border-radius: 10px;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #DA291C;
+        }
+
+        .contact-section p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #DA291C;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: #F8BC25;
+            color: #DA291C;
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer p {
+            margin-bottom: 10px;
+        }
+
+        .footer a {
+            color: #F8BC25;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+            }
+
+            .nav-links li {
+                margin: 10px 0;
+            }
+
+            .burger {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Burger King Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="deals.html">Deals</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="burger" onclick="toggleMenu()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, comments, or concerns, please feel free to reach out to us using the form below.</p>
+        <form class="contact-form" action="submit_form.php" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>© 2024 Burger King</p>
+        <p>Made with <span style="color: red;">&#9829;</span> by <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Contact Us | Burger King</title>
+                <style>
+                    /* Reset default browser styles */
+                    * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                    }
+            
+                    body {
+                        font-family: Arial, sans-serif;
+                        line-height: 1.6;
+                        background-color: #F7F7F7;
+                        color: #333;
+                    }
+            
+                    .navbar {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        background-color: #F8BC25;
+                        padding: 15px 20px;
+                        position: sticky;
+                        top: 0;
+                        z-index: 1000;
+                    }
+            
+                    .logo img {
+                        width: 120px;
+                    }
+            
+                    .nav-links {
+                        list-style: none;
+                        display: flex;
+                    }
+            
+                    .nav-links li {
+                        margin-left: 20px;
+                    }
+            
+                    .nav-links a {
+                        text-decoration: none;
+                        color: #DA291C;
+                        font-size: 18px;
+                        font-weight: bold;
+                        transition: color 0.3s ease;
+                    }
+            
+                    .nav-links a:hover {
+                        color: #FFFFFF;
+                    }
+            
+                    .burger {
+                        display: none;
+                        cursor: pointer;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        height: 21px;
+                    }
+            
+                    .burger div {
+                        width: 25px;
+                        height: 3px;
+                        background-color: #DA291C;
+                        border-radius: 10px;
+                    }
+            
+                    /* Contact Section */
+                    .contact-section {
+                        padding: 50px 20px;
+                        text-align: center;
+                    }
+            
+                    .contact-section h2 {
+                        font-size: 2.5em;
+                        margin-bottom: 20px;
+                        color: #DA291C;
+                    }
+            
+                    .contact-section p {
+                        font-size: 1.2em;
+                        margin-bottom: 40px;
+                    }
+            
+                    .contact-form {
+                        max-width: 600px;
+                        margin: 0 auto;
+                        background-color: white;
+                        padding: 30px;
+                        border-radius: 10px;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    }
+            
+                    .contact-form input, .contact-form textarea {
+                        width: 100%;
+                        padding: 10px;
+                        margin-bottom: 20px;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                        font-size: 16px;
+                    }
+            
+                    .contact-form input[type="submit"] {
+                        background-color: #DA291C;
+                        color: white;
+                        border: none;
+                        cursor: pointer;
+                        transition: background-color 0.3s ease;
+                    }
+            
+                    .contact-form input[type="submit"]:hover {
+                        background-color: #F8BC25;
+                        color: #DA291C;
+                    }
+            
+                    /* Footer Section */
+                    .footer {
+                        background-color: #333;
+                        color: white;
+                        padding: 20px;
+                        text-align: center;
+                    }
+            
+                    .footer p {
+                        margin-bottom: 10px;
+                    }
+            
+                    .footer a {
+                        color: #F8BC25;
+                        text-decoration: none;
+                    }
+            
+                    .footer a:hover {
+                        text-decoration: underline;
+                    }
+            
+                    /* Responsive Design */
+                    @media (max-width: 768px) {
+                        .nav-links {
+                            display: none;
+                            flex-direction: column;
+                            width: 100%;
+                            text-align: center;
+                        }
+            
+                        .nav-links li {
+                            margin: 10px 0;
+                        }
+            
+                        .burger {
+                            display: flex;
+                        }
+                    }
+                </style>
+            </head>
+            <body>
+                <nav class="navbar">
+                    <div class="logo">
+                        <img src="logo.png" alt="Burger King Logo">
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="burger" onclick="toggleMenu()">
+                        
+                    </div>
+                </nav>
+            
+                <section class="contact-section">
+                    <h2>Contact Us</h2>
+                    
+                    <form class="contact-form" action="form.php" method="post">
+
+                        <input type="text" name="name" placeholder="Your Name" required>
+
+                        <input type="email" name="email" placeholder="Your Email" required>
+
+                        
+
+                        <input type="submit" value="Send Message">
+                    </form>
+                </section>
+            
+                <footer class="footer">
+                    <p>© 2024 Burger King</p>
+                    <p>Made with <span style="color: red;">&#9829;</span> by Burger King Team</p>
+                </footer>
+            
+                
+            </body>
+            </html>
+             Team</p>
+    </footer>
+
+    
+</body>
+</html>

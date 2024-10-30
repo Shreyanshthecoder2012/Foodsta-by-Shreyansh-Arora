@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Enjoy your favorite meals at Foodsta. Fast delivery, great deals, and delicious options!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <title>Home | foodsta</title>
+    <style>
+        /* Reset default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #F8BC25;
+            color: #222;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #F8BC25;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo img {
+            width: 120px;
+            height: auto;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #DA291C;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #FFFFFF;
+        }
+
+        .burger {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 21px;
+        }
+
+        .burger div {
+            width: 25px;
+            height: 3px;
+            background-color: #DA291C;
+            border-radius: 10px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('images/burger.jpg') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            font-family: 'Pacifico', cursive;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            color: #333;
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+
+        .cta {
+            background-color: #DA291C;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+
+        .cta:hover {
+            background-color: #F8BC25;
+            color: #DA291C;
+        }
+
+        /* About Section */
+        .about {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #DA291C;
+            font-family: 'Pacifico', cursive;
+        }
+
+        .about p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Feedback Section */
+        .feedback-section {
+            padding: 50px 20px;
+            background-color: #F7F7F7;
+            text-align: center;
+        }
+
+        .feedback-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #DA291C;
+            font-family: 'Pacifico', cursive;
+        }
+
+        .feedback-form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            border: 2px solid #DA291C;
+            padding: 30px;
+            background-color: #FFF;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .feedback-form input,
+        .feedback-form textarea {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #DA291C;
+            border-radius: 5px;
+            font-size: 1.1em;
+            background-color: #F8F8F8;
+        }
+
+        .feedback-form button {
+            background-color: #DA291C;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .feedback-form button:hover {
+            background-color: #F8BC25;
+            color: #DA291C;
+            transform: translateY(-2px);
+        }
+
+        .feedback-list {
+            margin-top: 30px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .feedback-item {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #F8BC25;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .feedback-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .feedback-item p {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        .feedback-item span {
+            font-weight: bold;
+            color: #DA291C;
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer p {
+            margin-bottom: 10px;
+        }
+
+        .footer a {
+            color: #F8BC25;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+            }
+
+            .nav-links li {
+                margin: 10px 0;
+            }
+
+            .burger {
+                display: flex;
+            }
+
+            .hero {
+                height: 60vh;
+            }
+
+            .menu-items {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" aria-label="Main Navigation">
+        <div class="logo">
+            <img src="logo.png" alt="foodsta Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="Sign-in.html">Sign in</a></li>
+            <li><a href="deals.html">Deals</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="burger" aria-label="Toggle Navigation Menu" onclick="toggleMenu()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1 id="w">Welcome to Foodsta</h1>
+        <p>Your favorite meals, just a click away.</p>
+        <a href="menu.html" class="btn cta">Order Now</a>
+    </header>
+
+    <section class="about">
+        <h2>About Us</h2>
+        <p>At Foodsta, we believe in serving delicious meals made with the highest quality ingredients. Our commitment to excellence has made us one of the most beloved fast-food chains in the world. With pure vegeterian menu .Whether you're craving a juicy burger, crispy fries, or a refreshing drink, we've got something for everyone!</p>
+    </section>
+
+    <!-- Feedback Section -->
+    <section class="feedback-section">
+        <h2>Your Feedback</h2>
+        <form class="feedback-form" id="feedbackForm">
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" rows="4" placeholder="Your Feedback" required></textarea>
+            <button type="submit">Submit Feedback</button>
+        </form>
+
+        <div class="feedback-list" id="feedbackList">
+            <div class="feedback-item">
+                <p><span>Email:</span> rslkarora@gmail.com</p>
+                <p>"Absolutely love the food here! Always fresh and the service is fast."</p>
+            </div>
+            <div class="feedback-item">
+                <p><span>Email:</span> krisharora2009@gmail.com</p>
+                <p>"The burgers are to die for! Highly recommended and effective prices."</p>
+            </div>
+            <div class="feedback-item">
+                <p><span>Email:</span> rslkarora123@outlook.com</p>
+                <p>"Great experience, friendly staff, and the fries are crispy just how I like them!"</p>
+            </div>
+            <div class="feedback-item">
+                <p><span>Email:</span> shreyanshofficial12@gmail.com</p>
+                <p>"Great!"</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Foodsta. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+
+    <script>
+        // Toggle Navbar Menu
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        }
+
+        // Feedback Form Submission
+        const feedbackForm = document.getElementById('feedbackForm');
+        const feedbackList = document.getElementById('feedbackList');
+
+        feedbackForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            const feedbackItem = document.createElement('div');
+            feedbackItem.classList.add('feedback-item');
+            feedbackItem.innerHTML = `<p><span>Email:</span> ${email}</p><p>${message}</p>`;
+
+            feedbackList.appendChild(feedbackItem);
+
+            feedbackForm.reset();
+        });
+    </script>
+</body>
+</html>
+
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Burger King</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/burger-king-logo.png" alt="Burger King Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="deals.html">Deals</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="burger" onclick="toggleMenu()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Welcome to Burger King</h1>
+        <p>Your favorite meals, just a click away.</p>
+        <a href="menu.html" class="btn">Order Now</a>
+    </header>
+
+    <section class="features">
+        <div class="feature">
+            <img src="images/burger.jpg" alt="Burger">
+            <h2>Delicious Burgers</h2>
+            <p>Freshly made with quality ingredients.</p>
+        </div>
+        <div class="feature">
+            <img src="images/fries.jpg" alt="Fries">
+            <h2>Crispy Fries</h2>
+            <p>Perfectly crispy and golden.</p>
+        </div>
+        <div class="feature">
+            <img src="images/drink.jpg" alt="Drinks">
+            <h2>Refreshing Drinks</h2>
+            <p>Cool off with our wide selection of beverages.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Burger King. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
